@@ -19,8 +19,8 @@ import (
 	"sync"
 	"time"
 
-	"github.com/panglove/frp/pkg/config"
-	"github.com/panglove/frp/pkg/util/xlog"
+	"github.com/lmxdawn/frp/pkg/config"
+	"github.com/lmxdawn/frp/pkg/util/xlog"
 )
 
 type VisitorManager struct {

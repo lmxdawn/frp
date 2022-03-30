@@ -6,12 +6,12 @@ import (
 	"os"
 	"testing"
 
-	"github.com/panglove/frp/pkg/util/log"
-	"github.com/panglove/frp/test/e2e/framework"
+	"github.com/lmxdawn/frp/pkg/util/log"
+	"github.com/lmxdawn/frp/test/e2e/framework"
 
 	// test source
-	_ "github.com/panglove/frp/test/e2e/basic"
-	_ "github.com/panglove/frp/test/e2e/plugin"
+	_ "github.com/lmxdawn/frp/test/e2e/basic"
+	_ "github.com/lmxdawn/frp/test/e2e/plugin"
 
 	_ "github.com/onsi/ginkgo"
 )

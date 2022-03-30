@@ -12,11 +12,11 @@ import (
 	"github.com/gorilla/websocket"
 	"github.com/stretchr/testify/assert"
 
-	"github.com/panglove/frp/client/proxy"
-	"github.com/panglove/frp/server/ports"
-	"github.com/panglove/frp/tests/consts"
-	"github.com/panglove/frp/tests/mock"
-	"github.com/panglove/frp/tests/util"
+	"github.com/lmxdawn/frp/client/proxy"
+	"github.com/lmxdawn/frp/server/ports"
+	"github.com/lmxdawn/frp/tests/consts"
+	"github.com/lmxdawn/frp/tests/mock"
+	"github.com/lmxdawn/frp/tests/util"
 
 	gnet "github.com/fatedier/golib/net"
 )

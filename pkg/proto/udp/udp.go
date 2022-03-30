@@ -20,7 +20,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/panglove/frp/pkg/msg"
+	"github.com/lmxdawn/frp/pkg/msg"
 
 	"github.com/fatedier/golib/errors"
 	"github.com/fatedier/golib/pool"

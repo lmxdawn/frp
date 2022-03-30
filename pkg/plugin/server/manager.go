@@ -19,8 +19,8 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/panglove/frp/pkg/util/util"
-	"github.com/panglove/frp/pkg/util/xlog"
+	"github.com/lmxdawn/frp/pkg/util/util"
+	"github.com/lmxdawn/frp/pkg/util/xlog"
 )
 
 type Manager struct {

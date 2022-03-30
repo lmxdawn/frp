@@ -6,8 +6,8 @@ import (
 	"path/filepath"
 	"time"
 
-	flog "github.com/panglove/frp/pkg/util/log"
-	"github.com/panglove/frp/test/e2e/pkg/process"
+	flog "github.com/lmxdawn/frp/pkg/util/log"
+	"github.com/lmxdawn/frp/test/e2e/pkg/process"
 )
 
 func GenerateConfigFile(path string, content string) error {

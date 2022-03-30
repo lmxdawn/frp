@@ -19,8 +19,8 @@ import (
 	"io/ioutil"
 	"net/http"
 
-	frpLog "github.com/panglove/frp/pkg/util/log"
-	"github.com/panglove/frp/pkg/util/version"
+	frpLog "github.com/lmxdawn/frp/pkg/util/log"
+	"github.com/lmxdawn/frp/pkg/util/version"
 )
 
 var (

@@ -2,9 +2,9 @@ package main
 
 import (
 	"github.com/fatedier/golib/crypto"
-	"github.com/panglove/frp/pkg/auth"
-	"github.com/panglove/frp/pkg/config"
-	"github.com/panglove/frp/server"
+	"github.com/lmxdawn/frp/pkg/auth"
+	"github.com/lmxdawn/frp/pkg/config"
+	"github.com/lmxdawn/frp/server"
 	"testing"
 	"time"
 )
@@ -19,8 +19,8 @@ func Test2(t *testing.T) {
 
 	go newFrpServer.Run()
 
-	for  {
+	for {
 		newFrpServer.GetProxyStatsByType("tcp")
-		time.Sleep(time.Second*5)
+		time.Sleep(time.Second * 5)
 	}
 }

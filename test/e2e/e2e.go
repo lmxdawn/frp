@@ -3,8 +3,8 @@ package e2e
 import (
 	"testing"
 
-	"github.com/panglove/frp/pkg/util/log"
-	"github.com/panglove/frp/test/e2e/framework"
+	"github.com/lmxdawn/frp/pkg/util/log"
+	"github.com/lmxdawn/frp/test/e2e/framework"
 
 	"github.com/onsi/ginkgo"
 	"github.com/onsi/ginkgo/config"

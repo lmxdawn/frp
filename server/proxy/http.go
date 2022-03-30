@@ -19,11 +19,11 @@ import (
 	"net"
 	"strings"
 
-	"github.com/panglove/frp/pkg/config"
-	frpNet "github.com/panglove/frp/pkg/util/net"
-	"github.com/panglove/frp/pkg/util/util"
-	"github.com/panglove/frp/pkg/util/vhost"
-	"github.com/panglove/frp/server/metrics"
+	"github.com/lmxdawn/frp/pkg/config"
+	frpNet "github.com/lmxdawn/frp/pkg/util/net"
+	"github.com/lmxdawn/frp/pkg/util/util"
+	"github.com/lmxdawn/frp/pkg/util/vhost"
+	"github.com/lmxdawn/frp/server/metrics"
 
 	frpIo "github.com/fatedier/golib/io"
 )

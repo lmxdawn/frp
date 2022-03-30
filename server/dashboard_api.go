@@ -18,11 +18,11 @@ import (
 	"encoding/json"
 	"net/http"
 
-	"github.com/panglove/frp/pkg/config"
-	"github.com/panglove/frp/pkg/consts"
-	"github.com/panglove/frp/pkg/metrics/mem"
-	"github.com/panglove/frp/pkg/util/log"
-	"github.com/panglove/frp/pkg/util/version"
+	"github.com/lmxdawn/frp/pkg/config"
+	"github.com/lmxdawn/frp/pkg/consts"
+	"github.com/lmxdawn/frp/pkg/metrics/mem"
+	"github.com/lmxdawn/frp/pkg/util/log"
+	"github.com/lmxdawn/frp/pkg/util/version"
 
 	"github.com/gorilla/mux"
 )

@@ -3,7 +3,7 @@ package event
 import (
 	"errors"
 
-	"github.com/panglove/frp/pkg/msg"
+	"github.com/lmxdawn/frp/pkg/msg"
 )
 
 type Type int

@@ -22,7 +22,7 @@ import (
 	"os"
 	"strings"
 
-	"github.com/panglove/frp/pkg/config"
+	"github.com/lmxdawn/frp/pkg/config"
 
 	"github.com/spf13/cobra"
 )

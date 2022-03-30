@@ -15,13 +15,13 @@
 package controller
 
 import (
-	"github.com/panglove/frp/pkg/nathole"
-	plugin "github.com/panglove/frp/pkg/plugin/server"
-	"github.com/panglove/frp/pkg/util/tcpmux"
-	"github.com/panglove/frp/pkg/util/vhost"
-	"github.com/panglove/frp/server/group"
-	"github.com/panglove/frp/server/ports"
-	"github.com/panglove/frp/server/visitor"
+	"github.com/lmxdawn/frp/pkg/nathole"
+	plugin "github.com/lmxdawn/frp/pkg/plugin/server"
+	"github.com/lmxdawn/frp/pkg/util/tcpmux"
+	"github.com/lmxdawn/frp/pkg/util/vhost"
+	"github.com/lmxdawn/frp/server/group"
+	"github.com/lmxdawn/frp/server/ports"
+	"github.com/lmxdawn/frp/server/visitor"
 )
 
 // All resource managers and controllers

@@ -18,12 +18,12 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/panglove/frp/pkg/auth"
-	"github.com/panglove/frp/pkg/config"
-	"github.com/panglove/frp/pkg/util/log"
-	"github.com/panglove/frp/pkg/util/util"
-	"github.com/panglove/frp/pkg/util/version"
-	"github.com/panglove/frp/server"
+	"github.com/lmxdawn/frp/pkg/auth"
+	"github.com/lmxdawn/frp/pkg/config"
+	"github.com/lmxdawn/frp/pkg/util/log"
+	"github.com/lmxdawn/frp/pkg/util/util"
+	"github.com/lmxdawn/frp/pkg/util/version"
+	"github.com/lmxdawn/frp/server"
 
 	"github.com/spf13/cobra"
 )

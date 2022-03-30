@@ -22,13 +22,13 @@ import (
 	"strconv"
 	"sync"
 
-	"github.com/panglove/frp/pkg/config"
-	"github.com/panglove/frp/pkg/msg"
-	plugin "github.com/panglove/frp/pkg/plugin/server"
-	frpNet "github.com/panglove/frp/pkg/util/net"
-	"github.com/panglove/frp/pkg/util/xlog"
-	"github.com/panglove/frp/server/controller"
-	"github.com/panglove/frp/server/metrics"
+	"github.com/lmxdawn/frp/pkg/config"
+	"github.com/lmxdawn/frp/pkg/msg"
+	plugin "github.com/lmxdawn/frp/pkg/plugin/server"
+	frpNet "github.com/lmxdawn/frp/pkg/util/net"
+	"github.com/lmxdawn/frp/pkg/util/xlog"
+	"github.com/lmxdawn/frp/server/controller"
+	"github.com/lmxdawn/frp/server/metrics"
 
 	frpIo "github.com/fatedier/golib/io"
 )

@@ -19,7 +19,7 @@ import (
 	"net"
 	"sync"
 
-	"github.com/panglove/frp/server/ports"
+	"github.com/lmxdawn/frp/server/ports"
 
 	gerr "github.com/fatedier/golib/errors"
 )

@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/panglove/frp/test/e2e/mock/echoserver"
-	"github.com/panglove/frp/test/e2e/pkg/port"
+	"github.com/lmxdawn/frp/test/e2e/mock/echoserver"
+	"github.com/lmxdawn/frp/test/e2e/pkg/port"
 )
 
 const (

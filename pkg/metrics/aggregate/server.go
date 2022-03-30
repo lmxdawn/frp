@@ -15,9 +15,9 @@
 package aggregate
 
 import (
-	"github.com/panglove/frp/pkg/metrics/mem"
-	"github.com/panglove/frp/pkg/metrics/prometheus"
-	"github.com/panglove/frp/server/metrics"
+	"github.com/lmxdawn/frp/pkg/metrics/mem"
+	"github.com/lmxdawn/frp/pkg/metrics/prometheus"
+	"github.com/lmxdawn/frp/server/metrics"
 )
 
 // EnableMem start to mark metrics to memory monitor system.

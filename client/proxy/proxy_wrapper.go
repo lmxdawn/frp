@@ -8,11 +8,11 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/panglove/frp/client/event"
-	"github.com/panglove/frp/client/health"
-	"github.com/panglove/frp/pkg/config"
-	"github.com/panglove/frp/pkg/msg"
-	"github.com/panglove/frp/pkg/util/xlog"
+	"github.com/lmxdawn/frp/client/event"
+	"github.com/lmxdawn/frp/client/health"
+	"github.com/lmxdawn/frp/pkg/config"
+	"github.com/lmxdawn/frp/pkg/msg"
+	"github.com/lmxdawn/frp/pkg/util/xlog"
 
 	"github.com/fatedier/golib/errors"
 )
@@ -174,11 +174,11 @@ func (pw *Wrapper) checkWorker() {
 				var newProxyMsg msg.NewProxy
 				pw.Cfg.MarshalToMsg(&newProxyMsg)
 
-				newProxyMsg.LocalIp=pw.Cfg.GetBaseInfo().LocalIP
+				newProxyMsg.LocalIp = pw.Cfg.GetBaseInfo().LocalIP
 
-				newProxyMsg.LocalPort=pw.Cfg.GetBaseInfo().LocalPort
+				newProxyMsg.LocalPort = pw.Cfg.GetBaseInfo().LocalPort
 
-				newProxyMsg.ExtraMsg=pw.Cfg.GetBaseInfo().ExtraMsg
+				newProxyMsg.ExtraMsg = pw.Cfg.GetBaseInfo().ExtraMsg
 
 				pw.lastSendStartMsg = now
 				pw.handler(event.EvStartProxy, &event.StartProxyPayload{

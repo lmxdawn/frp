@@ -23,7 +23,7 @@ import (
 	"net/http/httputil"
 	"strings"
 
-	frpNet "github.com/panglove/frp/pkg/util/net"
+	frpNet "github.com/lmxdawn/frp/pkg/util/net"
 )
 
 const PluginHTTP2HTTPS = "http2https"

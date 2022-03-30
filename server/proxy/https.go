@@ -17,9 +17,9 @@ package proxy
 import (
 	"strings"
 
-	"github.com/panglove/frp/pkg/config"
-	"github.com/panglove/frp/pkg/util/util"
-	"github.com/panglove/frp/pkg/util/vhost"
+	"github.com/lmxdawn/frp/pkg/config"
+	"github.com/lmxdawn/frp/pkg/util/util"
+	"github.com/lmxdawn/frp/pkg/util/vhost"
 )
 
 type HTTPSProxy struct {

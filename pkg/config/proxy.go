@@ -20,9 +20,9 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/panglove/frp/pkg/consts"
-	"github.com/panglove/frp/pkg/msg"
-	"github.com/panglove/frp/pkg/util/util"
+	"github.com/lmxdawn/frp/pkg/consts"
+	"github.com/lmxdawn/frp/pkg/msg"
+	"github.com/lmxdawn/frp/pkg/util/util"
 
 	ini "github.com/vaughan0/go-ini"
 )
@@ -103,7 +103,7 @@ func NewProxyConfFromIni(prefix string, name string, section ini.Section) (cfg P
 type BaseProxyConf struct {
 	// ProxyName is the name of this proxy.
 	ProxyName string `json:"proxy_name"`
-	ExtraMsg string `json:"extra_msg"`
+	ExtraMsg  string `json:"extra_msg"`
 	// ProxyType specifies the type of this proxy. Valid values include "tcp",
 	// "udp", "http", "https", "stcp", and "xtcp". By default, this value is
 	// "tcp".

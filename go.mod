@@ -1,4 +1,4 @@
-module github.com/panglove/frp
+module github.com/lmxdawn/frp
 
 go 1.15
 

@@ -7,9 +7,9 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"github.com/panglove/frp/tests/config"
-	"github.com/panglove/frp/tests/consts"
-	"github.com/panglove/frp/tests/util"
+	"github.com/lmxdawn/frp/tests/config"
+	"github.com/lmxdawn/frp/tests/consts"
+	"github.com/lmxdawn/frp/tests/util"
 )
 
 const FRPS_RELOAD_CONF = `

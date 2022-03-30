@@ -3,7 +3,7 @@ package framework
 import (
 	"time"
 
-	"github.com/panglove/frp/test/e2e/pkg/request"
+	"github.com/lmxdawn/frp/test/e2e/pkg/request"
 )
 
 func ExpectRequest(protocol string, port int, in, out []byte, timeout time.Duration, explain ...interface{}) {

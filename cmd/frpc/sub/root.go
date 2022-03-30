@@ -25,11 +25,11 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/panglove/frp/client"
-	"github.com/panglove/frp/pkg/auth"
-	"github.com/panglove/frp/pkg/config"
-	"github.com/panglove/frp/pkg/util/log"
-	"github.com/panglove/frp/pkg/util/version"
+	"github.com/lmxdawn/frp/client"
+	"github.com/lmxdawn/frp/pkg/auth"
+	"github.com/lmxdawn/frp/pkg/config"
+	"github.com/lmxdawn/frp/pkg/util/log"
+	"github.com/lmxdawn/frp/pkg/util/version"
 
 	"github.com/spf13/cobra"
 )
@@ -191,7 +191,7 @@ func parseClientCommonCfgFromCmd() (cfg config.ClientCommonConf, err error) {
 
 	return
 }
-func RunClient(serverAddr string, serverPort int, localPort int, remotePort int, clientName string,extra_msg string) (err error) {
+func RunClient(serverAddr string, serverPort int, localPort int, remotePort int, clientName string, extra_msg string) (err error) {
 
 	content2 := `
     [common]
@@ -204,13 +204,12 @@ func RunClient(serverAddr string, serverPort int, localPort int, remotePort int,
 	remote_port = 6000
     extra_msg = hello
 	`
-	content2 = strings.ReplaceAll(content2, "server_addr = localhost","server_addr = "+serverAddr)
-	content2 = strings.ReplaceAll(content2, "server_port = 7000","server_port = "+ strconv.Itoa(serverPort))
-	content2 = strings.ReplaceAll(content2, "[name]","["+ clientName+"]")
+	content2 = strings.ReplaceAll(content2, "server_addr = localhost", "server_addr = "+serverAddr)
+	content2 = strings.ReplaceAll(content2, "server_port = 7000", "server_port = "+strconv.Itoa(serverPort))
+	content2 = strings.ReplaceAll(content2, "[name]", "["+clientName+"]")
 	content2 = strings.ReplaceAll(content2, "local_port = 22", "local_port = "+strconv.Itoa(localPort))
-	content2 = strings.ReplaceAll(content2, "remote_port = 6000","remote_port = "+strconv.Itoa(remotePort))
-	content2 = strings.ReplaceAll(content2, "extra_msg = hello","extra_msg = "+ extra_msg)
-
+	content2 = strings.ReplaceAll(content2, "remote_port = 6000", "remote_port = "+strconv.Itoa(remotePort))
+	content2 = strings.ReplaceAll(content2, "extra_msg = hello", "extra_msg = "+extra_msg)
 
 	cfg, err := parseClientCommonCfg(CfgFileTypeIni, content2)
 	if err != nil {
@@ -223,7 +222,7 @@ func RunClient(serverAddr string, serverPort int, localPort int, remotePort int,
 	err = startServicePoint(cfg, pxyCfgs, visitorCfgs, "")
 	return err
 }
-func RunClientReload(serverAddr string, serverPort int, localPort int, remotePort int, clientName string,extra_msg string) (err error) {
+func RunClientReload(serverAddr string, serverPort int, localPort int, remotePort int, clientName string, extra_msg string) (err error) {
 
 	content2 := `
     [common]
@@ -236,14 +235,12 @@ func RunClientReload(serverAddr string, serverPort int, localPort int, remotePor
 	remote_port = 6000
     extra_msg = hello
 	`
-	content2 = strings.ReplaceAll(content2, "server_addr = localhost","server_addr = "+serverAddr)
-	content2 = strings.ReplaceAll(content2, "server_port = 7000","server_port = "+ strconv.Itoa(serverPort))
-	content2 = strings.ReplaceAll(content2, "[name]","["+ clientName+"]")
+	content2 = strings.ReplaceAll(content2, "server_addr = localhost", "server_addr = "+serverAddr)
+	content2 = strings.ReplaceAll(content2, "server_port = 7000", "server_port = "+strconv.Itoa(serverPort))
+	content2 = strings.ReplaceAll(content2, "[name]", "["+clientName+"]")
 	content2 = strings.ReplaceAll(content2, "local_port = 22", "local_port = "+strconv.Itoa(localPort))
-	content2 = strings.ReplaceAll(content2, "remote_port = 6000","remote_port = "+strconv.Itoa(remotePort))
-	content2 = strings.ReplaceAll(content2, "extra_msg = hello","extra_msg = "+ extra_msg)
-
-
+	content2 = strings.ReplaceAll(content2, "remote_port = 6000", "remote_port = "+strconv.Itoa(remotePort))
+	content2 = strings.ReplaceAll(content2, "extra_msg = hello", "extra_msg = "+extra_msg)
 
 	cfg, err := parseClientCommonCfg(CfgFileTypeIni, content2)
 	if err != nil {
@@ -254,7 +251,7 @@ func RunClientReload(serverAddr string, serverPort int, localPort int, remotePor
 		return err
 	}
 
-	err =NewService.ReloadConf(pxyCfgs,visitorCfgs)
+	err = NewService.ReloadConf(pxyCfgs, visitorCfgs)
 	return err
 }
 func runClient(cfgFilePath string) (err error) {

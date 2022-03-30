@@ -23,8 +23,8 @@ import (
 	"os"
 	"strings"
 
-	"github.com/panglove/frp/client"
-	"github.com/panglove/frp/pkg/config"
+	"github.com/lmxdawn/frp/client"
+	"github.com/lmxdawn/frp/pkg/config"
 
 	"github.com/rodaine/table"
 	"github.com/spf13/cobra"

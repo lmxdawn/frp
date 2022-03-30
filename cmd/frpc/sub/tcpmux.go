@@ -21,8 +21,8 @@ import (
 
 	"github.com/spf13/cobra"
 
-	"github.com/panglove/frp/pkg/config"
-	"github.com/panglove/frp/pkg/consts"
+	"github.com/lmxdawn/frp/pkg/config"
+	"github.com/lmxdawn/frp/pkg/consts"
 )
 
 func init() {

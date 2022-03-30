@@ -21,11 +21,11 @@ import (
 	"net"
 	"time"
 
-	"github.com/panglove/frp/pkg/config"
-	"github.com/panglove/frp/pkg/msg"
-	"github.com/panglove/frp/pkg/proto/udp"
-	frpNet "github.com/panglove/frp/pkg/util/net"
-	"github.com/panglove/frp/server/metrics"
+	"github.com/lmxdawn/frp/pkg/config"
+	"github.com/lmxdawn/frp/pkg/msg"
+	"github.com/lmxdawn/frp/pkg/proto/udp"
+	frpNet "github.com/lmxdawn/frp/pkg/util/net"
+	"github.com/lmxdawn/frp/server/metrics"
 
 	"github.com/fatedier/golib/errors"
 	frpIo "github.com/fatedier/golib/io"

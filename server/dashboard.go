@@ -20,7 +20,7 @@ import (
 	"net/http"
 	"time"
 
-	frpNet "github.com/panglove/frp/pkg/util/net"
+	frpNet "github.com/lmxdawn/frp/pkg/util/net"
 
 	"github.com/gorilla/mux"
 	"github.com/prometheus/client_golang/prometheus/promhttp"

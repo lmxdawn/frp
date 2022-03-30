@@ -15,7 +15,7 @@
 package xlog
 
 import (
-	"github.com/panglove/frp/pkg/util/log"
+	"github.com/lmxdawn/frp/pkg/util/log"
 )
 
 // Logger is not thread safety for operations on prefix

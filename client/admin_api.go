@@ -22,9 +22,9 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/panglove/frp/client/proxy"
-	"github.com/panglove/frp/pkg/config"
-	"github.com/panglove/frp/pkg/util/log"
+	"github.com/lmxdawn/frp/client/proxy"
+	"github.com/lmxdawn/frp/pkg/config"
+	"github.com/lmxdawn/frp/pkg/util/log"
 )
 
 type GeneralResponse struct {

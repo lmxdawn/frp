@@ -18,8 +18,8 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/panglove/frp/pkg/config"
-	"github.com/panglove/frp/pkg/consts"
+	"github.com/lmxdawn/frp/pkg/config"
+	"github.com/lmxdawn/frp/pkg/consts"
 
 	"github.com/spf13/cobra"
 )

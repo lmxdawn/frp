@@ -6,10 +6,10 @@ import (
 	"net"
 	"sync"
 
-	"github.com/panglove/frp/client/event"
-	"github.com/panglove/frp/pkg/config"
-	"github.com/panglove/frp/pkg/msg"
-	"github.com/panglove/frp/pkg/util/xlog"
+	"github.com/lmxdawn/frp/client/event"
+	"github.com/lmxdawn/frp/pkg/config"
+	"github.com/lmxdawn/frp/pkg/msg"
+	"github.com/lmxdawn/frp/pkg/util/xlog"
 
 	"github.com/fatedier/golib/errors"
 )

@@ -20,8 +20,8 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/panglove/frp/assets"
-	frpNet "github.com/panglove/frp/pkg/util/net"
+	"github.com/lmxdawn/frp/assets"
+	frpNet "github.com/lmxdawn/frp/pkg/util/net"
 
 	"github.com/gorilla/mux"
 )

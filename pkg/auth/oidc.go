@@ -18,7 +18,7 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/panglove/frp/pkg/msg"
+	"github.com/lmxdawn/frp/pkg/msg"
 
 	"github.com/coreos/go-oidc"
 	"github.com/vaughan0/go-ini"

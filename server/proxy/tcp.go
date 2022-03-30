@@ -19,7 +19,7 @@ import (
 	"log"
 	"net"
 
-	"github.com/panglove/frp/pkg/config"
+	"github.com/lmxdawn/frp/pkg/config"
 )
 
 type TCPProxy struct {
@@ -48,7 +48,7 @@ func (pxy *TCPProxy) Run() (remoteAddr string, err error) {
 	} else {
 		pxy.realPort, err = pxy.rc.TCPPortManager.Acquire(pxy.name, pxy.cfg.RemotePort)
 		if err != nil {
-			log.Println("error:",err)
+			log.Println("error:", err)
 			pxy.Close()
 			return
 		}
